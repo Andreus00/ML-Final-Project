@@ -1,0 +1,63 @@
+2022-12-27 00:34:39,252 INFO    MainThread:25343 [wandb_setup.py:_flush():68] Configure stats pid to 25343
+2022-12-27 00:34:39,252 INFO    MainThread:25343 [wandb_setup.py:_flush():68] Loading settings from /home/andrea/.config/wandb/settings
+2022-12-27 00:34:39,252 INFO    MainThread:25343 [wandb_setup.py:_flush():68] Loading settings from /home/andrea/Documenti/Computer Science/Machine Learning/ML-Final-Project/src/wandb/settings
+2022-12-27 00:34:39,252 INFO    MainThread:25343 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-12-27 00:34:39,252 INFO    MainThread:25343 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-12-27 00:34:39,252 INFO    MainThread:25343 [wandb_init.py:_log_setup():476] Logging user logs to /home/andrea/Documenti/Computer Science/Machine Learning/ML-Final-Project/src/wandb/run-20221227_003439-1oium1ej/logs/debug.log
+2022-12-27 00:34:39,252 INFO    MainThread:25343 [wandb_init.py:_log_setup():477] Logging internal logs to /home/andrea/Documenti/Computer Science/Machine Learning/ML-Final-Project/src/wandb/run-20221227_003439-1oium1ej/logs/debug-internal.log
+2022-12-27 00:34:39,252 INFO    MainThread:25343 [wandb_init.py:_jupyter_setup():426] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fa23235f580>
+2022-12-27 00:34:39,252 INFO    MainThread:25343 [wandb_init.py:init():516] calling init triggers
+2022-12-27 00:34:39,252 INFO    MainThread:25343 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-12-27 00:34:39,252 INFO    MainThread:25343 [wandb_init.py:init():569] starting backend
+2022-12-27 00:34:39,252 INFO    MainThread:25343 [wandb_init.py:init():573] setting up manager
+2022-12-27 00:34:39,254 INFO    MainThread:25343 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-12-27 00:34:39,256 INFO    MainThread:25343 [wandb_init.py:init():580] backend started and connected
+2022-12-27 00:34:39,263 INFO    MainThread:25343 [wandb_run.py:_label_probe_notebook():1116] probe notebook
+2022-12-27 00:34:39,263 INFO    MainThread:25343 [wandb_run.py:_label_probe_notebook():1126] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2022-12-27 00:34:39,263 INFO    MainThread:25343 [wandb_init.py:init():658] updated telemetry
+2022-12-27 00:34:39,264 INFO    MainThread:25343 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-12-27 00:34:39,669 INFO    MainThread:25343 [wandb_run.py:_on_init():2006] communicating current version
+2022-12-27 00:34:39,742 INFO    MainThread:25343 [wandb_run.py:_on_init():2010] got version response 
+2022-12-27 00:34:39,742 INFO    MainThread:25343 [wandb_init.py:init():728] starting run threads in backend
+2022-12-27 00:34:40,113 INFO    MainThread:25343 [wandb_run.py:_console_start():1986] atexit reg
+2022-12-27 00:34:40,113 INFO    MainThread:25343 [wandb_run.py:_redirect():1844] redirect: SettingsConsole.WRAP_RAW
+2022-12-27 00:34:40,113 INFO    MainThread:25343 [wandb_run.py:_redirect():1909] Wrapping output streams.
+2022-12-27 00:34:40,113 INFO    MainThread:25343 [wandb_run.py:_redirect():1931] Redirects installed.
+2022-12-27 00:34:40,113 INFO    MainThread:25343 [wandb_init.py:init():765] run started, returning control to user process
+2022-12-27 00:34:40,114 INFO    MainThread:25343 [wandb_init.py:_pause_backend():389] pausing backend
+2022-12-27 00:34:40,114 INFO    MainThread:25343 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-12-27 00:35:03,150 INFO    MainThread:25343 [wandb_init.py:_resume_backend():398] resuming backend
+2022-12-27 00:35:03,173 INFO    MainThread:25343 [wandb_init.py:_pause_backend():389] pausing backend
+2022-12-27 00:35:03,173 INFO    MainThread:25343 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-12-27 00:35:15,846 INFO    MainThread:25343 [wandb_init.py:_resume_backend():398] resuming backend
+2022-12-27 00:35:15,848 INFO    MainThread:25343 [wandb_init.py:_pause_backend():389] pausing backend
+2022-12-27 00:35:15,848 INFO    MainThread:25343 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-12-27 00:35:17,401 INFO    MainThread:25343 [wandb_init.py:_resume_backend():398] resuming backend
+2022-12-27 00:35:17,402 INFO    MainThread:25343 [wandb_init.py:_pause_backend():389] pausing backend
+2022-12-27 00:35:17,402 INFO    MainThread:25343 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-12-27 00:35:18,227 INFO    MainThread:25343 [wandb_init.py:_resume_backend():398] resuming backend
+2022-12-27 00:35:18,228 INFO    MainThread:25343 [wandb_init.py:_pause_backend():389] pausing backend
+2022-12-27 00:35:18,228 INFO    MainThread:25343 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-12-27 00:35:21,784 INFO    MainThread:25343 [wandb_init.py:_resume_backend():398] resuming backend
+2022-12-27 00:35:21,793 INFO    MainThread:25343 [wandb_setup.py:_flush():68] Configure stats pid to 25343
+2022-12-27 00:35:21,793 INFO    MainThread:25343 [wandb_setup.py:_flush():68] Loading settings from /home/andrea/.config/wandb/settings
+2022-12-27 00:35:21,793 INFO    MainThread:25343 [wandb_setup.py:_flush():68] Loading settings from /home/andrea/Documenti/Computer Science/Machine Learning/ML-Final-Project/src/wandb/settings
+2022-12-27 00:35:21,793 INFO    MainThread:25343 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-12-27 00:35:21,793 INFO    MainThread:25343 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2022-12-27 00:35:21,793 INFO    MainThread:25343 [wandb_init.py:_log_setup():476] Logging user logs to /home/andrea/Documenti/Computer Science/Machine Learning/ML-Final-Project/src/wandb/run-20221227_003521-3mi8dvwb/logs/debug.log
+2022-12-27 00:35:21,793 INFO    MainThread:25343 [wandb_init.py:_log_setup():477] Logging internal logs to /home/andrea/Documenti/Computer Science/Machine Learning/ML-Final-Project/src/wandb/run-20221227_003521-3mi8dvwb/logs/debug-internal.log
+2022-12-27 00:35:21,793 INFO    MainThread:25343 [wandb_init.py:init():516] calling init triggers
+2022-12-27 00:35:21,793 INFO    MainThread:25343 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2022-12-27 00:35:21,793 INFO    MainThread:25343 [wandb_init.py:init():535] re-initializing run, found existing run on stack: 1oium1ej
+2022-12-27 00:35:21,794 INFO    MainThread:25343 [wandb_run.py:_finish():1753] finishing run andr3us/ML-final-project/1oium1ej
+2022-12-27 00:35:21,796 ERROR   MainThread:25343 [jupyter.py:save_history():440] Run pip install nbformat to save notebook history
+2022-12-27 00:35:21,796 INFO    MainThread:25343 [jupyter.py:save_ipynb():378] not saving jupyter notebook
+2022-12-27 00:35:21,796 INFO    MainThread:25343 [wandb_init.py:_jupyter_teardown():408] cleaning up jupyter logic
+2022-12-27 00:35:21,796 INFO    MainThread:25343 [wandb_run.py:_atexit_cleanup():1955] got exitcode: 0
+2022-12-27 00:35:21,796 INFO    MainThread:25343 [wandb_run.py:_restore():1938] restore
+2022-12-27 00:35:21,796 INFO    MainThread:25343 [wandb_run.py:_restore():1944] restore done
+2022-12-27 00:35:25,961 INFO    MainThread:25343 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2022-12-27 00:35:25,961 INFO    MainThread:25343 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2022-12-27 00:35:25,962 INFO    MainThread:25343 [wandb_run.py:_footer_sync_info():3364] logging synced files
