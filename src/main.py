@@ -3,12 +3,12 @@ import os
 import PIL
 import PIL.Image
 import tensorflow as tf
-# import wandb
+import wandb
 from tensorflow import keras
 import config
 from wandb.keras import WandbMetricsLogger, WandbModelCheckpoint
 
-# wandb.init(project="ML-final-project", entity="andr3us")
+wandb.init(project="ML-final-project", entity="andr3us")
 
 
 batch_size = 32
@@ -59,20 +59,20 @@ def convblock2d(x, filters, kernelsize: int, num_convs: int, activation="relu", 
 
 
 inputs = tf.keras.Input(shape=(180, 180, 3))
-hidden_layer = convblock2d(inputs, 128, 3, 1)
-hidden_layer = resblock(hidden_layer, 128, 3)
-hidden_layer = tf.keras.layers.Conv2D(filters=128, kernel_size=3, padding="same", activation="relu", strides=2)(hidden_layer)
-hidden_layer = convblock2d(hidden_layer, 64, 3, 1)
+hidden_layer = convblock2d(inputs, 64, 3, num_convs = 1)
 hidden_layer = resblock(hidden_layer, 64, 3)
 hidden_layer = tf.keras.layers.Conv2D(filters=64, kernel_size=3, padding="same", activation="relu", strides=2)(hidden_layer)
-hidden_layer = convblock2d(hidden_layer, 32, 3, 1)
-hidden_layer = resblock(hidden_layer, 32, 3)
-hidden_layer = tf.keras.layers.Conv2D(filters=32, kernel_size=3, padding="same", activation="relu", strides=2)(hidden_layer)
-hidden_layer = convblock2d(hidden_layer, 16, 3, 1)
-hidden_layer = resblock(hidden_layer, 16, 3)
-hidden_layer = tf.keras.layers.Conv2D(filters=16, kernel_size=3, padding="same", activation="relu", strides=2)(hidden_layer)
-hidden_layer = convblock2d(hidden_layer, 8, 3, 1)
-hidden_layer = resblock(hidden_layer, 8, 3)
+hidden_layer = convblock2d(hidden_layer, 128, 3, 1)
+hidden_layer = resblock(hidden_layer, 128, 3)
+hidden_layer = tf.keras.layers.Conv2D(filters=128, kernel_size=3, padding="same", activation="relu", strides=2)(hidden_layer)
+hidden_layer = convblock2d(hidden_layer, 256, 3, 1)
+hidden_layer = resblock(hidden_layer, 256, 3)
+hidden_layer = tf.keras.layers.Conv2D(filters=256, kernel_size=3, padding="same", activation="relu", strides=2)(hidden_layer)
+hidden_layer = convblock2d(hidden_layer, 512, 3, 1)
+hidden_layer = resblock(hidden_layer, 512, 3)
+hidden_layer = tf.keras.layers.Conv2D(filters=512, kernel_size=3, padding="same", activation="relu", strides=2)(hidden_layer)
+hidden_layer = convblock2d(hidden_layer, 1024, 3, 1)
+hidden_layer = resblock(hidden_layer, 1024, 3)
 hidden_layer = tf.keras.layers.Flatten()(hidden_layer)
 output_layer = tf.keras.layers.Dense(10)(hidden_layer)
 
@@ -92,8 +92,8 @@ model.fit(
   train_ds,
   validation_data=val_ds,
   epochs=30,
-  batch_size=config.batch_size
-  # callbacks=[WandbMetricsLogger(log_freq="batch"),
-  # WandbModelCheckpoint("models", save_best_only=True),]
+  batch_size=config.batch_size,
+  callbacks=[WandbMetricsLogger(log_freq="batch"),
+  WandbModelCheckpoint("models", save_best_only=True),]
 )
 

@@ -1,4 +1,11 @@
-data_dir = "/media/andrea/NVMe/Dataset/Eurosat/2750/"
+training_dir = "/media/andrea/NVMe/Dataset/BIRDS 450 SPECIES/train/"
+training_dir_eurosat = "/media/andrea/NVMe/Dataset/Eurosat/2750/"
+valid_dir = "/media/andrea/NVMe/Dataset/BIRDS 450 SPECIES/test/"
+test_dir = "/media/andrea/NVMe/Dataset/BIRDS 450 SPECIES/train/"
 batch_size = 32
 img_height = 180
 img_width = 180
+classes = 450
+input_shape = (img_width, img_height, 3)
+validation_split=0.2
+model_filepath="./best_models"

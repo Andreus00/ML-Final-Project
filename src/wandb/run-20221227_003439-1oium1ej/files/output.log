@@ -1,6 +1,0 @@
-2022-12-27 00:35:03.171841: E tensorflow/compiler/xla/stream_executor/cuda/cuda_driver.cc:267] failed call to cuInit: CUDA_ERROR_UNKNOWN: unknown error
-2022-12-27 00:35:03.171861: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: andrea-Pc
-2022-12-27 00:35:03.171864: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: andrea-Pc
-2022-12-27 00:35:03.171911: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 525.60.13
-2022-12-27 00:35:03.171919: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 525.60.13
-2022-12-27 00:35:03.171921: I tensorflow/compiler/xla/stream_executor/cuda/cuda_diagnostics.cc:310] kernel version seems to match DSO: 525.60.13

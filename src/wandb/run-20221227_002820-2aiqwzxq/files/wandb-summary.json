@@ -1,1 +1,0 @@
-{"batch/loss": -18.664133071899414, "batch/categorical_accuracy": 0.07670454680919647, "batch/binary_crossentropy": -18.664133071899414, "batch/batch_step": 32, "batch/learning_rate": 0.0010000000474974513, "_timestamp": 1672097507.8353746, "_runtime": 207.43640971183777, "_step": 32, "_wandb": {"runtime": 181}}
